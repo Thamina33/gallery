@@ -26,7 +26,11 @@ class _GalleryScreenState extends State<GalleryScreen> {
                 const CircleAvatar(
                 radius: 60,
                 backgroundImage: AssetImage('assets/images/placeholder.png'),),
-                  Text(orientation.toString()),
+                  // Text(orientation.toString(),style: TextStyle(
+                  //     fontSize: 14,
+                  //     fontWeight: FontWeight.w600,
+                  //     color: Colors.green
+                  // ),),
                   const Text("Jhon Deo",style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
@@ -80,13 +84,24 @@ class _GalleryScreenState extends State<GalleryScreen> {
 
                     width: MediaQuery.of(context).size.width/1.5,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(orientation.toString()),
-                        const Text("Jhon Deo",style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.black
-                        ),),
+                        // Padding(
+                        //   padding: const EdgeInsets.symmetric(horizontal: 18.0),
+                        //   child: Text(orientation.toString(),style: TextStyle(
+                        //       fontSize: 14,
+                        //       fontWeight: FontWeight.w600,
+                        //       color: Colors.green
+                        //   ),),
+                        // ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 18.0),
+                          child: Text("Jhon Deo",style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.black
+                          ),),
+                        ),
                         const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 18.0),
                           child: Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
